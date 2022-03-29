@@ -22,9 +22,6 @@ function calcoloPrezzo() {
     let valoreSconto = sales(listaSconti);
     console.log("valore sconto " + valoreSconto);
 
-    if (valoreSconto == null) {
-        alert("Codice sconto inserito non valido.");
-    }
     let prezzo, prezzofin;
     switch (lavoro) {
         case "1": //sviluppo BackEnd
@@ -68,6 +65,14 @@ function sales(lista) {
             //ha diritto ad uno sconto
             bool = true;
             valoreSconto = 0.25;
+
+            for (let j = 0; j < lista.length; j++) {
+                if (lista[j] == lista[i]) {
+                    lista.splice(j, 1);
+                }
+            }
+            
+            console.log(lista);
             break;
 
         } else if (sconto == "") { //casella sconto vuoto
@@ -81,6 +86,14 @@ function sales(lista) {
 
     if (bool == false) {
         valoreSconto = null;
+        alert("Codice sconto inserito non valido.");
+        erroreSconto();
     }
     return valoreSconto;
+}
+
+function erroreSconto() {
+    let scritta = document.getElementById("sconto");
+    console.log(scritta);
+    scritta.classList.add("text-danger"); //se codice sconto non valido risulta in rosso
 }
