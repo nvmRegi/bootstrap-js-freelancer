@@ -168,7 +168,7 @@
             
                     <div class="row pb-3">
                         <div class="col-fluid text-center">
-                            <h2>WANT AND OFFER?</h2>
+                            <h2>WANT AN OFFER?</h2>
                         </div>
                     </div>
             
@@ -206,7 +206,7 @@
 
                             <label for="hoursRequested" class="form-label">Hours requested</label>
 
-                            <input type="number" class="form-control" placeholder="Hours Requested">
+                            <input type="number" class="form-control" placeholder="Hours Requested" id="ore">
                         </div>
                     </div>
             
@@ -217,10 +217,10 @@
 
                             <label for="tipoLavoro" class="form-label">Type of Work</label>
 
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" id="lavoro">
                                 <option selected>Select type of work</option>
-                                <option value="1">Backed Development</option>
-                                <option value="2">Frontend Development</option>
+                                <option value="1">BackEnd Development</option>
+                                <option value="2">FrontEnd Development</option>
                                 <option value="3">Project Analisys</option>
                             </select>
                         </div>
@@ -230,7 +230,7 @@
 
                             <label for="discountCode" class="form-label">Discount Code</label>
 
-                            <input type="text" class="form-control" placeholder="Discount Code">
+                            <input type="text" class="form-control" placeholder="Discount Code" id="sconto">
                         </div>
                     </div>
             
@@ -246,20 +246,19 @@
                     <!--BOTTONE-->
                     <div class="row justify-content-center">
                         <div class="col-2 my-2">
-                            <button type="submit" class="btn btn-warning">Send</button>
+                            <button type="submit" class="btn btn-warning" onclick="calcoloPrezzo()">Send</button>
                         </div>
                     </div>
             
                     <!--RISULTATO-->
-                    <div>
-                        <h2></h2>
+                    <div class="py-2">
+                        <h2 id="risultato"></h2>
                     </div>
                 </div>
             </div>
         </form>
         
         <!--FOOTER-->
-        
         <footer class="bg-dark">
 
             <div class="text-secondary text-center pt-3">
@@ -271,9 +270,9 @@
             </div>
             
         </footer>
-        
-
        
     </div>
+
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
