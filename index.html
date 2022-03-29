@@ -160,76 +160,105 @@
         </div>
 
         <!--FORM-->
-        <div class="bg-info">
-            <div class="container">
+        <form>
 
-                <div class="row">
-                    <div class="col-fluid text-center">
-                        <h2>WANT AND OFFER?</h2>
+            <div class="bg-info">
+
+                <div class="container py-4">
+            
+                    <div class="row pb-3">
+                        <div class="col-fluid text-center">
+                            <h2>WANT AND OFFER?</h2>
+                        </div>
                     </div>
-                </div>
+            
+                    <div class="row">
+            
+                        <!--NOME-->
+                        <div class="col my-2">
 
-                <div class="row">
+                            <label for="nome" class="form-label">First Name</label>
 
-                    <!--NOME-->
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+            
+                        <!--COGNOME-->
+                        <div class="col my-2">
+
+                            <label for="cognome" class="form-label">Last Name</label>
+
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
                     </div>
+            
+                    <div class="row">
+            
+                        <!--EMAIL-->
+                        <div class="col my-2">
 
-                    <!--COGNOME-->
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <label for="email" class="form-label">Email Address</label>
+
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+            
+                        <!--ORE RICHIESTE-->
+                        <div class="col my-2">
+
+                            <label for="hoursRequested" class="form-label">Hours requested</label>
+
+                            <input type="number" class="form-control" placeholder="Hours Requested">
+                        </div>
                     </div>
-                </div>
+            
+                    <div class="row">
+            
+                        <!--TIPO DI LAVORO-->
+                        <div class="col my-2">
 
-                <div class="row">
+                            <label for="tipoLavoro" class="form-label">Type of Work</label>
 
-                    <!--EMAIL-->
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select type of work</option>
+                                <option value="1">Backed Development</option>
+                                <option value="2">Frontend Development</option>
+                                <option value="3">Project Analisys</option>
+                            </select>
+                        </div>
+            
+                        <!--CODICE SCONTO-->
+                        <div class="col my-2">
+
+                            <label for="discountCode" class="form-label">Discount Code</label>
+
+                            <input type="text" class="form-control" placeholder="Discount Code">
+                        </div>
                     </div>
-                    
-                    <!--ORE RICHIESTE-->
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            
+                    <div class="row">
+            
+                        <!--MESSAGGIO-->
+                        <div class="col my-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="textArea" rows="5"></textarea>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row">
-
-                    <!--TIPO DI LAVORO-->
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            
+                    <!--BOTTONE-->
+                    <div class="row justify-content-center">
+                        <div class="col-2 my-2">
+                            <button type="submit" class="btn btn-warning">Send</button>
+                        </div>
                     </div>
-                    
-                    <!--CODICE SCONTO-->
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            
+                    <!--RISULTATO-->
+                    <div>
+                        <h2></h2>
                     </div>
-                </div>
-
-                <div class="row">
-
-                    <!--MESSAGGIO-->
-                    <div class="col mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                </div>
-
-                <!--BOTTONE-->
-                <div class="row justify-content-center">
-                    <div class="col-2 ">
-                        <button type="submit" class="btn btn-warning">Send</button>
-                    </div>
-                </div>
-
-                <!--RISULTATO-->
-                <div>
-                    <p></p>
                 </div>
             </div>
-        </div>
+        </form>
+        
+        
 
         <!--FOOTER-->
         <div>
