@@ -22,6 +22,9 @@ function calcoloPrezzo() {
     let valoreSconto = sales(listaSconti);
     console.log("valore sconto " + valoreSconto);
 
+    if (valoreSconto == null) {
+        alert("Codice sconto inserito non valido.");
+    }
     let prezzo, prezzofin;
     switch (lavoro) {
         case "1": //sviluppo BackEnd
@@ -56,15 +59,28 @@ function sales(lista) {
 
     let valoreSconto = 0;
 
-    for (let i = 0; i < lista.length; i++){
+    let bool = false; 
+    for (let i = 0; i < lista.length; i++){//verifica del codice sconto
 
-        if (sconto == lista[i]) {
+
+        if (sconto == lista[i]) { //lo sconto esiste
+
             //ha diritto ad uno sconto
+            bool = true;
             valoreSconto = 0.25;
             break;
-        }
-        
-    } //se non trova il codice, esce dal for con valoreSconto = 0
 
+        } else if (sconto == "") { //casella sconto vuoto
+            
+            bool = true;
+            break;
+
+        }
+
+    } //se non trova il codice, esce dal for con valoreSconto = 0 e bool = false
+
+    if (bool == false) {
+        valoreSconto = null;
+    }
     return valoreSconto;
 }
