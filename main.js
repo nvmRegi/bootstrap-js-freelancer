@@ -8,8 +8,8 @@ let listaSconti = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
 
 
 //calcolo prezzo lavoro
-function calcoloPrezzo() {
-    event.preventDefault();
+function calcoloPrezzo(e) {
+    e.preventDefault();
 
     let ore = document.getElementById("ore").value; //ore richieste
     ore = parseInt(ore);

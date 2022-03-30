@@ -161,20 +161,17 @@
         </div>
 
         <!--FORM-->
-        <form>
-
-            <a name="contattami"></a>
-
-            <div class="bg-info">
-
-                <div class="container py-4">
-            
-                    <div class="row pb-3">
-                        <div class="col-fluid text-center">
-                            <h2>WANT AN OFFER?</h2>
-                        </div>
+        <div class="bg-info">
+        <a name="contattami"></a>
+            <div class="container py-4">
+        
+                <div class="row pb-3">
+                    <div class="col-fluid text-center">
+                        <h2>WANT AN OFFER?</h2>
                     </div>
-            
+                </div>
+
+                <form id="offerForm" onsubmit="calcoloPrezzo(event)">
                     <div class="row">
             
                         <!--NOME-->
@@ -249,7 +246,7 @@
                     <!--BOTTONE-->
                     <div class="row justify-content-center">
                         <div class="col-1 my-2 text-center">
-                            <button type="submit" class="btn btn-warning" onclick="calcoloPrezzo()">Send</button>
+                            <button type="submit" class="btn btn-warning" id="submitButton">Send</button>
                         </div>
                     </div>
             
@@ -257,9 +254,9 @@
                     <div class="py-2">
                         <h2 id="risultato"></h2>
                     </div>
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
         
         <!--FOOTER-->
         <footer class="bg-dark">
