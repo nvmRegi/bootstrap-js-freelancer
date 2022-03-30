@@ -66,11 +66,8 @@ function sales(lista) {
             bool = true;
             valoreSconto = 0.25;
 
-            for (let j = 0; j < lista.length; j++) {
-                if (lista[j] == lista[i]) {
-                    lista.splice(j, 1);
-                }
-            }
+            lista.splice(i, 1); // bonus
+            
             
             console.log(lista);
             break;
@@ -87,13 +84,10 @@ function sales(lista) {
     if (bool == false) {
         valoreSconto = null;
         alert("Codice sconto inserito non valido.");
-        erroreSconto();
+        let scritta = document.getElementById("sconto");
+        console.log(scritta);
+        document.getElementById("sconto").classList.add("text-danger"); //se codice sconto non valido risulta in rosso
     }
     return valoreSconto;
 }
 
-function erroreSconto() {
-    let scritta = document.getElementById("sconto");
-    console.log(scritta);
-    scritta.classList.add("text-danger"); //se codice sconto non valido risulta in rosso
-}
