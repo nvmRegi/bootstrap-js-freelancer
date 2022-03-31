@@ -66,8 +66,7 @@ function sales(lista) {
             bool = true;
             valoreSconto = 0.25;
 
-            lista.splice(i, 1); // bonus
-            
+            lista.splice(i, 1); // bonus: togliere i codici già utilizzati
             
             console.log(lista);
             break;

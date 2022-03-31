@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Bootstrap Javascript Freelancer</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <div>
-        
         <!--HEADER, devo utilizzare la navbar-->
         <!--<nav class="navbar navbar-dark bg-dark>"-->
         <header class="bg-dark">
-
             <div class="container">
                 <div class="row text-info py-3 justify-content-center">
                     <div class="col text-start">
                         Portfolio
                     </div>
-
                     <div class="col text-end text-uppercase text-decoration-underline">
                         <a href="#contattami">contact me</a> <!--link per il form-->
                     </div>
+                </div>
             </div>
-            </div>
-        
         </header>
-
         <!--PROPIC-->
         <div class="bg-info">
             <div class="container text-center pt-5">
@@ -51,68 +44,49 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-
         <!--PORTFOLIO-->
         <div>
-
             <div class="container text-center pb-5">
-
                 <div class="row pt-4">
                     <div class="col">
                         <h2>PORTFOLIO</h2>
                     </div>
                 </div>
-
                 <div class="row pt-1">
-
                     <!--CARD1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-
                         <div class="card">
                             <img src="img/cabin.png" class="card-img-top" alt="Cabin Website">
                             <div class="card-body">
-
                                 <h5 class="card-title">Cabin Website</h5>
-                                
                                 <button class="btn btn-info me-2">Preview</button>
                                 <button class="btn btn-outline-info ms-2">Visit site</button>
-                            
-                                
                             </div>
                         </div>
-
                     </div>
-                    
                     <!--CARD2-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card">
                             <img src="img/cake.png" class="card-img-top" alt="Cake Website">
                             <div class="card-body">
                                 <h5 class="card-title">Cake Website</h5>
-                                
                                 <button class="btn btn-info me-2">Preview</button>
                                 <button class="btn btn-outline-info ms-2">Visit site</button>
                             </div>
                         </div>
                     </div>
-                    
-
                     <!--CARD3-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card">
                             <img src="img/circus.png" class="card-img-top" alt="Circus Website">
                             <div class="card-body">
                                 <h5 class="card-title">Circus Website</h5>
-                                
                                 <button class="btn btn-info me-2">Preview</button>
                                 <button class="btn btn-outline-info ms-2">Visit site</button>
                             </div>
                         </div>
                     </div>
-                    
-
                     <!--CARD4-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card">
@@ -123,100 +97,71 @@
                                 <button class="btn btn-info me-2">Preview</button>
                                 <button class="btn btn-outline-info ms-2">Visit site</button>
                             </div>
-                    
                         </div>
                     </div>
-                    
                     <!--CARD5-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card">
                             <img src="img/safe.png" class="card-img-top" alt="Safe Website">
                             <div class="card-body">
                                 <h5 class="card-title">Safe Website</h5>
-                                
                                 <button class="btn btn-info me-2">Preview</button>
                                 <button class="btn btn-outline-info ms-2">Visit site</button>
                             </div>
-                    
                         </div>
                     </div>
-                    
                     <!--CARD6-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card">
                             <img src="img/submarine.png" class="card-img-top" alt="Submarine Website">
                             <div class="card-body">
                                 <h5 class="card-title">Submarine Website</h5>
-                                
                                 <button class="btn btn-info me-2">Preview</button>
                                 <button class="btn btn-outline-info ms-2">Visit site</button>
                             </div>
-                    
                         </div>
                     </div>
-                    
-
                 </div>
             </div>
         </div>
-
         <!--FORM-->
         <div class="bg-info">
         <a name="contattami"></a>
             <div class="container py-4">
-        
                 <div class="row pb-3">
                     <div class="col-fluid text-center">
                         <h2>WANT AN OFFER?</h2>
                     </div>
                 </div>
-
                 <form id="offerForm" onsubmit="calcoloPrezzo(event)">
                     <div class="row">
-            
                         <!--NOME-->
                         <div class="col-md-6 my-2">
-
                             <label for="nome" class="form-label">First Name</label>
-
                             <input type="text" class="form-control" placeholder="First name">
                         </div>
-            
                         <!--COGNOME-->
                         <div class="col-md-6 my-2">
-
                             <label for="cognome" class="form-label">Last Name</label>
-
                             <input type="text" class="form-control" placeholder="Last name">
                         </div>
                     </div>
-            
                     <div class="row">
-            
                         <!--EMAIL-->
                         <div class="col-md-6 my-2">
-
                             <label for="email" class="form-label">Email Address</label>
-
                             <input type="email" class="form-control" placeholder="Email Address">
                         </div>
-            
                         <!--ORE RICHIESTE-->
                         <div class="col-md-6 my-2">
-
                             <label for="hoursRequested" class="form-label">Hours requested</label>
-
                             <input type="number" class="form-control" placeholder="Hours Requested" id="ore">
                         </div>
                     </div>
-            
                     <div class="row">
-            
                         <!--TIPO DI LAVORO-->
                         <div class="col-md-6 my-2">
-
                             <label for="tipoLavoro" class="form-label">Type of Work</label>
-
                             <select class="form-select" aria-label="Default select example" id="lavoro">
                                 <option selected>Select type of work</option>
                                 <option value="1">BackEnd Development</option>
@@ -224,32 +169,25 @@
                                 <option value="3">Project Analisys</option>
                             </select>
                         </div>
-            
                         <!--CODICE SCONTO-->
                         <div class="col-md-6 my-2">
-
                             <label for="discountCode" class="form-label">Discount Code</label>
-
                             <input type="text" class="form-control" placeholder="Discount Code" id="sconto">
                         </div>
                     </div>
-            
                     <div class="row">
-            
                         <!--MESSAGGIO-->
                         <div class="col-md- my-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                             <textarea class="form-control" id="textArea" rows="5"></textarea>
                         </div>
                     </div>
-            
                     <!--BOTTONE-->
                     <div class="row justify-content-center">
-                        <div class="col-1 my-2 text-center">
+                        <div class="col-3 my-2 justify-content-center text-center">
                             <button type="submit" class="btn btn-warning" id="submitButton">Send</button>
                         </div>
                     </div>
-            
                     <!--RISULTATO-->
                     <div class="py-2">
                         <h2 id="risultato"></h2>
@@ -257,22 +195,17 @@
                 </form>
             </div>
         </div>
-        
         <!--FOOTER-->
         <footer class="bg-dark">
-
             <div class="text-secondary text-center pt-3">
-               <h5 class="my-3">LOCATION</h5>
+                <h5 class="my-3">LOCATION</h5>
                 <p class="mb-0">2215 John Daniel Drive</p>
                 <p class="mb-0">Clark, MO 65243</p>
-
                 <p class="blackquote-footer mb-0 py-3"><small>Copyright &copy; Your Website 2021<small></p>
             </div>
-            
         </footer>
-       
     </div>
 
     <script type="text/javascript" src="main.js"></script>
-</body>
+    </body>
 </html>
